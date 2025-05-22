@@ -559,7 +559,6 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  /* background-color: var(--background-color); */
   font-size: 14px;
   padding-bottom: 10px;
   position: relative;
@@ -575,9 +574,16 @@ h6 {
   height: 100%;
   background: linear-gradient(hsla(229, 94%, 21%, 0.6), rgba(0, 0, 0, 0.906)), url(../img/fotter_img.jpg) no-repeat center center;
   background-size: cover;
-  opacity: 1; /* Adjust this value (0 = fully transparent, 1 = fully visible) */
+  opacity: 1;
   z-index: -1;
   animation: image-zoom 20s ease-in-out infinite alternate;
+}
+
+@media (max-width: 768px) {
+  .footer::before {
+    background: linear-gradient(hsla(43, 100%, 56%, 0.5), rgba(10, 57, 55, 0.664)), url(../img/diving_tour/hamback_whale.webp) no-repeat center center;
+    background-size: cover;
+  }
 }
 
 .footer .footer-contact a {
@@ -944,34 +950,6 @@ section,
 /*--------------------------------------------------------------
 # carousel-caption Section
 --------------------------------------------------------------*/
-/* .carousel-caption {
-  width: 100%;
-  min-height: 100vh;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.carousel-caption img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-} */
-
-/* .carousel-caption:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-} */
-
 .carousel-caption .container {
   z-index: 3;
 }
@@ -991,93 +969,67 @@ section,
   margin-top: 40px;
 }
 
-.carousel-caption .content .why-box {
-  color: var(--contrast-color);
-  text-align: center;
-  background: color-mix(in srgb,  #E6F0FF, transparent 70%);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.carousel-caption .content .why-box h3 {
-  color: var(--contrast-color);
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.carousel-caption .content .why-box p {
-  margin-bottom: 30px;
-}
-
-.carousel-caption .content .why-box .more-btn {
-  color: var(--contrast-color);
-  background: color-mix(in srgb, var(--contrast-color), transparent 80%);
-  display: inline-block;
-  padding: 6px 30px 8px 30px;
-  border-radius: 50px;
-  transition: all ease-in-out 0.4s;
-}
-
-.carousel-caption .content .why-box .more-btn i {
-  font-size: 14px;
-}
-
-.carousel-caption .content .why-box .more-btn:hover {
-  background: var(--contrast-color);
-  color: var(--accent-color);
-}
-
-.carousel-caption .content .icon-box {
-  background: color-mix(in srgb, #E6F0FF, transparent 70%);
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 10px 10px;
-  width: 100%;
-}
-
-.carousel-caption .content .icon-box i {
-  font-size: 40px;
-  color: var(--accent-color);
-}
-
-.carousel-caption .content .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 10px 0 20px 0;
-}
-
-.carousel-caption .content .icon-box p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
-}
-
-.carousel-caption .custom-icon-box {
-  /* margin: 20, 0, 20, 0; */
-  margin-bottom: 50px;
-  margin-top: 50px;
-}
-
-.carousel-caption .custom-icon {
-  width: 65px;  /* Adjust size of the icon */
-  height: 70px;
-  display: block;
-  margin: 0 auto 20px;  /* Space below the icon */
-}
-
 .carousel-caption .carousel-caption-icon-heading {
-  margin-top: 10px;  /* Adjust space above the heading */
-  text-align: center;  /* Centers the heading text */
+  margin-top: 10px;  
+  text-align: center;  
 }
 
+.heading_subtopic {
+  background-color: #ffffff3d;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 30px;
+}
+
+.heading_subtopic h5 {
+  font-size: 40px;
+  font-weight: 800;
+  text-shadow: 0 0 8px rgb(255, 255, 255);
+}
+
+.heading_subtopic p {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .heading_subtopic {
+    background-color: #ffffff3d;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .heading_subtopic {
+    background-color: #ffffff3d;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 20px;
+  }
+
+  .heading_subtopic h5 {
+    font-size: 30px;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgb(255, 255, 255);
+  }
+}
 
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
 .about {
-  background: linear-gradient(hsla(228, 100%, 91%, 0.95), rgba(0, 191, 255, 0.457)), url(../img/fotter_img.jpg) no-repeat center center;
+  background: linear-gradient(hsla(228, 100%, 91%, 0.95), rgba(0, 191, 255, 0.457)), url(../img/diving_tour/whale03.jpg) no-repeat center center;
+  background-size: cover;
 }
+
+@media (max-width:768px) {
+  .about {
+    background: linear-gradient(hsla(228, 100%, 91%, 0.95), rgba(0, 191, 255, 0.457)), url(../img/diving_tour/whale04.avif) no-repeat center center;
+    background-size: cover;
+  }
+}
+
 .about .content h3 {
   font-size: 2rem;
   font-weight: 700;
@@ -1182,6 +1134,17 @@ section,
   background-color: var(--accent-color);
 }
 
+@media (max-width: 550px) {
+  .clients {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    padding: 0 !important;
+  }
+
+  .clients .img-fluid {
+    max-width: 90% !important;
+  }
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1811,7 +1774,20 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
-  background: linear-gradient(hsla(47, 100%, 88%, 0.95), #ffd5007b), url(../img/fotter_img.jpg) no-repeat center center;
+  background: linear-gradient(hsla(47, 96%, 71%, 0.604), #0011ff7b), url(../img/diving_tour/whale03.jpg) no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+@media (max-width: 768px) {
+  #contact {
+    background: linear-gradient(hsla(47, 100%, 88%, 0.95), #0011ff7b), url(../img/diving_tour/whale04.avif) no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .info-item .contact-link {
@@ -2849,14 +2825,27 @@ section,
     border-radius: 10px;
 }
 
-.header-carousel .header-carousel-item .header_image {
-    animation-name: image-zoom;
+.header-carousel .active .header-carousel-item .header_image {
+    animation-name: header-zoom;
     animation-duration: 10s;
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     transition: 1s;
 }
+
+@keyframes header-zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25%, 75% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
 
 @keyframes image-zoom {
     0%  {width: 100%; height: 100%;}

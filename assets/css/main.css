@@ -289,7 +289,7 @@ h6 {
 
 @media (max-width: 575px) {
   .header .logo h1 {
-    font-size: 16px;
+    font-size: 20px;
     margin: 0;
     font-weight: 700;
     color: var(--heading-color);
@@ -1790,6 +1790,11 @@ section,
   }
 }
 
+.info-item {
+  background-color: rgba(255, 255, 255, 0.468);
+  box-shadow: 0 0 8px rgb(0, 0, 0) !important;
+}
+
 .info-item .contact-link {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   text-decoration: none;
@@ -1827,6 +1832,7 @@ section,
 }
 
 .contact .info-item p {
+  color: #00001c;
   padding: 0;
   margin-bottom: 0;
   font-size: 14px;
@@ -2687,6 +2693,16 @@ section,
   color: #E1306C; /* Instagram Pink */
 }
 .social-links a:nth-child(3) {
+  color: #FF0000; /* YouTube Red */
+}
+
+.social-links .bi-facebook {
+  color: #1877F2; /* Facebook Blue */
+}
+.social-links .bi-instagram {
+  color: #E1306C; /* Instagram Pink */
+}
+.social-links .bi-youtube {
   color: #FF0000; /* YouTube Red */
 }
 

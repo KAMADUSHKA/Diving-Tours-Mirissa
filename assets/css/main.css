@@ -1210,16 +1210,16 @@ section,
 /*--------------------------------------------------------------
 # Alt Services Section
 --------------------------------------------------------------*/
-.alt-services .img {
+.all-services .img {
   border-radius: 8px;
   overflow: hidden;
 }
 
-.alt-services .img img {
+.all-services .img img {
   transition: 0.6s;
 }
 
-.alt-services .details {
+.all-services .details {
   background: color-mix(in srgb, var(--surface-color), transparent 20%);
   position: absolute;
   left: 20px;
@@ -1232,14 +1232,14 @@ section,
   box-shadow: 0px 0 25px rgba(0, 0, 0, 0.1);
 }
 
-.alt-services .details h3 {
+.all-services .details h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
   transition: ease-in-out 0.3s;
 }
 
-.alt-services .details p {
+.all-services .details p {
   color: color-mix(in srgb, var(--default-color));
   line-height: 24px;
   font-size: 14px;
@@ -1250,11 +1250,11 @@ section,
   color: #059652;
 }
 
-.alt-services .service-item:hover .details h3 {
+.all-services .service-item:hover .details h3 {
   color: var(--accent-color);
 }
 
-.alt-services .service-item:hover .img img {
+.all-services .service-item:hover .img img {
   transform: scale(1.2);
 }
 

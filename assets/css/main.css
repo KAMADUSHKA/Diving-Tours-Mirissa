@@ -2911,3 +2911,9 @@ section,
     animation-direction: alternate;
     transition: 1s;
 }
+
+
+.package-video{
+  border-radius: 10px;
+  box-shadow: 0 10px 50px rgba(0, 0, 0, 0.223);
+}

@@ -2059,9 +2059,9 @@ section,
 # Blog Posts Section
 --------------------------------------------------------------*/
 .blog-posts article {
-  background-color: var(--surface-color);
+  background-color: rgb(245, 253, 255);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 15px;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;

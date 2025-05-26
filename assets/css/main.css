@@ -581,7 +581,7 @@ h6 {
 
 @media (max-width: 768px) {
   .footer::before {
-    background: linear-gradient(hsla(43, 100%, 56%, 0.5), rgba(10, 57, 55, 0.664)), url(../img/diving_tour/hamback_whale.webp) no-repeat center center;
+    background: linear-gradient(hsla(43, 100%, 56%, 0.5), rgba(10, 57, 55, 0.664)), url(../img/diving_tour/Blue-Whale.jpg) no-repeat center center;
     background-size: cover;
   }
 }

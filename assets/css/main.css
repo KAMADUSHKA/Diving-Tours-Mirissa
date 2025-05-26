@@ -581,7 +581,7 @@ h6 {
 
 @media (max-width: 768px) {
   .footer::before {
-    background: linear-gradient(hsla(43, 100%, 56%, 0.5), rgba(10, 57, 55, 0.664)), url(../img/diving_tour/Blue-Whale.jpg) no-repeat center center;
+    background: linear-gradient(hsla(203, 100%, 50%, 0.746), rgba(0, 34, 51, 0.713)), url(../img/diving_tour/Blue-Whale.jpg) no-repeat center center;
     background-size: cover;
   }
 }
@@ -1801,7 +1801,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 #contact {
-  background: linear-gradient(hsla(47, 96%, 71%, 0.604), #0011ff7b), url(../img/diving_tour/whale03.jpg) no-repeat center center;
+  background: linear-gradient(hsla(189, 96%, 71%, 0.604), #0011ff7b), url(../img/diving_tour/whale03.jpg) no-repeat center center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1810,7 +1810,7 @@ section,
 
 @media (max-width: 768px) {
   #contact {
-    background: linear-gradient(hsla(47, 100%, 88%, 0.95), #0011ff7b), url(../img/diving_tour/whale04.avif) no-repeat center center;
+    background: linear-gradient(hsla(189, 96%, 71%, 0.604), #0011ff7b), url(../img/diving_tour/whale04.avif) no-repeat center center;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -2056,19 +2056,12 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
-
-/*--------------------------------------------------------------
 # Blog Posts Section
 --------------------------------------------------------------*/
 .blog-posts article {
   background-color: var(--surface-color);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  padding: 30px;
+  padding: 20px;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
@@ -2170,7 +2163,7 @@ section,
 
 .blog-details .article {
   background-color: var(--surface-color);
-  padding: 30px;
+  padding: 10px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
@@ -2917,3 +2910,139 @@ section,
   border-radius: 10px;
   box-shadow: 0 10px 50px rgba(0, 0, 0, 0.223);
 }
+
+/* Contact Email form styles */
+.form-wrapper {
+  background: #fff;
+  padding: 30px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact_form h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.contact_form .form-header p {
+  text-align: center;
+}
+
+.contact_form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_form .form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.form-row .form-group {
+  flex: 1 1 45%;
+}
+
+.contact_form label {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.contact_form input,
+.contact_form select,
+.contact_form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.contact_form input:focus,
+.contact_form select:focus,
+.contact_form textarea:focus {
+  border-color: #00e5ff;
+}
+
+.contact_form textarea {
+  resize: vertical;
+}
+
+.contact_form .radio-wrapper {
+  display: flex;
+  gap: 30px;
+  margin-top: 8px;
+}
+
+.contact_form .radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+}
+
+.contact_form .radio-option input[type="radio"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.contact_form .g-recaptcha {
+  margin: 15px 0;
+}
+
+.contact_form button {
+  padding: 12px;
+  background-color: #00c2dc;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact_form button:hover {
+  background-color: #009cb1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .form-row .form-group {
+    flex: 1 1 100%;
+  }
+
+  .contact_form .radio-wrapper {
+    gap: 20px;
+  }
+}
+
+.form-status {
+  margin-bottom: 15px;
+  padding: 10px;
+  display: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.form-status.success {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}
+.form-status.error {
+  color: #721c24;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+.contact_form .form-status.processing {
+  background-color: #fff3cd;
+  color: #856404;
+}
+/* Contact Email form styles */
